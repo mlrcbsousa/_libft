@@ -1,27 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: manuel <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/03 22:59:12 by manuel            #+#    #+#             */
-/*   Updated: 2021/03/18 23:07:58 by manuel           ###   ########.fr       */
+/*   Created: 2021/03/18 23:04:07 by manuel            #+#    #+#             */
+/*   Updated: 2021/03/18 23:06:08 by manuel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strdup(const char *src)
+char	*ft_strcpy(char *dst, const char *src)
 {
-	char	*str;
+	char	*buf;
 
-	str = (char *)malloc(sizeof(*src) * (ft_strlen(src) + 1));
-	if (!str)
-	{
-		errno = ENOMEM;
-		return (NULL);
-	}
-	ft_strcpy(str, src);
-	return (str);
+	buf = dst;
+	while (*src)
+		*buf++ = *src++;
+	*buf = '\0';
+	return (dst);
 }

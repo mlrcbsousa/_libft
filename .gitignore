@@ -90,3 +90,5 @@ main.c
 a.out
 libft.h.gch
 .libft.h.swp
+.ft_strcpy.c.swp
+ft_strcpy.o
