@@ -1,31 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: manuel <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/03 22:53:31 by manuel            #+#    #+#             */
-/*   Updated: 2021/03/18 23:47:31 by manuel           ###   ########.fr       */
+/*   Created: 2021/03/18 23:45:35 by manuel            #+#    #+#             */
+/*   Updated: 2021/03/18 23:45:56 by manuel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	ft_atoi(const char *str)
+int	ft_isspace(char c)
 {
-	int			sign;
-	long long	number;
-
-	sign = 1;
-	number = 0;
-	while (ft_isspace(*str))
-		str++;
-	if (*str == '-')
-		sign = -1;
-	if (*str == '-' || *str == '+')
-		str++;
-	while (ft_isdigit(*str))
-		number = number * 10 + *str++ - '0';
-	return ((int)(number * sign));
+	return (c == '\f' || c == '\n' || c == '\r' || c == '\t' || c == '\v'
+		|| c == ' ');
 }

@@ -92,3 +92,5 @@ libft.h.gch
 .libft.h.swp
 .ft_strcpy.c.swp
 ft_strcpy.o
+.ft_isspace.c.swp
+ft_isspace.o
