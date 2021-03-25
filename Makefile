@@ -6,7 +6,7 @@
 #    By: manuel <mlrcbsousa@gmail.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/03/03 22:33:22 by manuel            #+#    #+#              #
-#    Updated: 2021/03/18 23:51:35 by manuel           ###   ########.fr        #
+#    Updated: 2021/03/25 23:07:58 by manuel           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ SRCS	= ft_atoi.c ft_isalpha.c ft_isprint.c ft_memchr.c ft_memmove.c \
 		  ft_substr.c ft_calloc.c ft_strlcpy.c ft_split.c ft_strcpy.c \
 		  ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c \
 		  ft_lstiter.c ft_lstlast.c ft_lstmap.c ft_lstnew.c ft_lstsize.c \
-		  ft_isspace.c
+		  ft_isspace.c get_next_line.c
 
 OBJS	= ${SRCS:.c=.o}
 

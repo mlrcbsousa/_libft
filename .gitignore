@@ -94,3 +94,4 @@ libft.h.gch
 ft_strcpy.o
 .ft_isspace.c.swp
 ft_isspace.o
+get_next_line.o
