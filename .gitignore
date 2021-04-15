@@ -90,8 +90,9 @@ main.c
 a.out
 libft.h.gch
 .libft.h.swp
-.ft_strcpy.c.swp
 ft_strcpy.o
+.ft_strcpy.c.swp
 .ft_isspace.c.swp
 ft_isspace.o
 get_next_line.o
+.get_next_line.c.swp

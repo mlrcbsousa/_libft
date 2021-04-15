@@ -6,13 +6,13 @@
 /*   By: manuel <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/19 22:50:16 by manuel            #+#    #+#             */
-/*   Updated: 2021/03/25 23:00:02 by manuel           ###   ########.fr       */
+/*   Updated: 2021/04/15 20:31:49 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	gnl_file(int fd, char **str, char *buf)
+static int	gnl_file(int fd, char **str, char *buf)
 {
 	ssize_t	size;
 	char	*tmp;
@@ -34,7 +34,7 @@ int	gnl_file(int fd, char **str, char *buf)
 	return (1);
 }
 
-int	gnl_set_line(int fd, char **str, char **line, char *end)
+static int	gnl_set_line(int fd, char **str, char **line, char *end)
 {
 	char	*tmp;
 

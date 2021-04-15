@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manuel <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
+/*   By: msousa <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/03 22:55:27 by manuel            #+#    #+#             */
-/*   Updated: 2021/03/25 19:19:50 by manuel           ###   ########.fr       */
+/*   Created: 2021/04/12 23:08:30 by msousa            #+#    #+#             */
+/*   Updated: 2021/04/13 16:44:11 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 char	*ft_strchr(const char *str, int c)
 {
-	if (!str)
-		return (NULL);
 	while (*str)
 		if (*str++ == (char)c)
 			return ((char *)(str - 1));

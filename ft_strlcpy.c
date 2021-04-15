@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: manuel <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
+/*   By: msousa <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/06 12:48:35 by manuel            #+#    #+#             */
-/*   Updated: 2021/03/12 22:34:40 by manuel           ###   ########.fr       */
+/*   Created: 2021/04/12 23:10:52 by msousa            #+#    #+#             */
+/*   Updated: 2021/04/13 16:49:23 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	const char	*buf;
 
+	if (!dst || !src)
+		return (0);
 	buf = src;
 	if (src && dst && size)
 	{

@@ -6,7 +6,7 @@
 /*   By: manuel <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 23:15:21 by manuel            #+#    #+#             */
-/*   Updated: 2021/03/25 23:07:24 by manuel           ###   ########.fr       */
+/*   Updated: 2021/04/15 22:45:49 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,9 @@
 #  define BUFFER_SIZE 1
 # endif
 
-# define OPEN_MAX 1024
+# ifndef OPEN_MAX
+#  define OPEN_MAX 1024
+# endif
 
 typedef struct s_list
 {
@@ -43,7 +45,6 @@ void	*ft_memchr(const void *str, int c, size_t n);
 int		ft_memcmp(const void *str1, const void *str2, size_t n);
 
 size_t	ft_strlen(const char *str);
-char	*ft_strcpy(char *dst, const char *src);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 char	*ft_strchr(const char *str, int c);
@@ -58,7 +59,6 @@ int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
-int		ft_isspace(char c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 
@@ -93,6 +93,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 // Others
 
+char	*ft_strcpy(char *dst, const char *src);
+int		ft_isspace(char c);
 int		get_next_line(int fd, char **line);
 
 #endif
