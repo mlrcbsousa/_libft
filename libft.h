@@ -6,7 +6,7 @@
 /*   By: manuel <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 23:15:21 by manuel            #+#    #+#             */
-/*   Updated: 2021/04/15 22:45:49 by msousa           ###   ########.fr       */
+/*   Updated: 2021/04/22 00:49:31 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,10 +91,11 @@ void	ft_lstclear(t_list **lst, void (*del)(void	*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
-// Others
+// Added
 
 char	*ft_strcpy(char *dst, const char *src);
 int		ft_isspace(char c);
 int		get_next_line(int fd, char **line);
+char	*ft_uitoa(unsigned int n);
 
 #endif
