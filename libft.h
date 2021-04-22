@@ -6,7 +6,7 @@
 /*   By: manuel <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 23:15:21 by manuel            #+#    #+#             */
-/*   Updated: 2021/04/22 00:49:31 by msousa           ###   ########.fr       */
+/*   Updated: 2021/04/23 00:37:52 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,5 +97,7 @@ char	*ft_strcpy(char *dst, const char *src);
 int		ft_isspace(char c);
 int		get_next_line(int fd, char **line);
 char	*ft_uitoa(unsigned int n);
+int		ft_ternary(int condition, int a, int b);
+int		ft_abs(int n);
 
 #endif

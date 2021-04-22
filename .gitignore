@@ -97,3 +97,5 @@ ft_isspace.o
 get_next_line.o
 .get_next_line.c.swp
 ft_uitoa.o
+*.swp
+*.o
