@@ -6,7 +6,7 @@
 /*   By: manuel <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 23:15:21 by manuel            #+#    #+#             */
-/*   Updated: 2021/04/23 19:03:27 by msousa           ###   ########.fr       */
+/*   Updated: 2021/04/23 20:04:55 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,23 @@
 # ifndef OPEN_MAX
 #  define OPEN_MAX 1024
 # endif
+
+# ifndef STDIN
+#  define STDIN 0
+# endif
+
+# ifndef STDOUT
+#  define STDOUT 1
+# endif
+
+# ifndef STDERR
+#  define STDERR 2
+# endif
+
+# define HEX "0123456789abcdef"
+# define HEXU "0123456789ABCDEF"
+# define BINARY "01"
+# define OCTAL "01234567"
 
 typedef struct s_list
 {
@@ -100,5 +117,8 @@ char	*ft_uitoa(unsigned int n);
 int		ft_ternary(int condition, int a, int b);
 int		ft_abs(int n);
 size_t	ft_ullen(unsigned long nbr, int base);
+void	ft_putnbr_base(long long nb, char *radix);
+void	ft_putchar(char c);
+void	ft_putstr(char *str);
 
 #endif

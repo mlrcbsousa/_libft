@@ -6,7 +6,7 @@
 #    By: msousa <mlrcbsousa@gmail.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/12 22:41:56 by msousa            #+#    #+#              #
-#    Updated: 2021/04/23 18:26:49 by msousa           ###   ########.fr        #
+#    Updated: 2021/04/23 20:05:05 by msousa           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ SRCS	= ft_atoi.c ft_isalpha.c ft_isprint.c ft_memchr.c ft_memmove.c \
 		  ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c \
 		  ft_lstiter.c ft_lstlast.c ft_lstmap.c ft_lstnew.c ft_lstsize.c \
 		  ft_isspace.c get_next_line.c ft_uitoa.c ft_abs.c ft_ternary.c \
-		  ft_ullen.c
+		  ft_ullen.c ft_putnbr_base.c ft_putchar.c ft_putstr.c
 
 OBJS	= ${SRCS:.c=.o}
 
