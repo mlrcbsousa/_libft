@@ -6,7 +6,7 @@
 /*   By: manuel <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 23:15:21 by manuel            #+#    #+#             */
-/*   Updated: 2021/04/23 00:37:52 by msousa           ###   ########.fr       */
+/*   Updated: 2021/04/23 19:03:27 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,5 +99,6 @@ int		get_next_line(int fd, char **line);
 char	*ft_uitoa(unsigned int n);
 int		ft_ternary(int condition, int a, int b);
 int		ft_abs(int n);
+size_t	ft_ullen(unsigned long nbr, int base);
 
 #endif
