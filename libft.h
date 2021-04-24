@@ -6,7 +6,7 @@
 /*   By: manuel <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 23:15:21 by manuel            #+#    #+#             */
-/*   Updated: 2021/04/23 20:04:55 by msousa           ###   ########.fr       */
+/*   Updated: 2021/04/24 00:53:23 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@
 #  define STDERR 2
 # endif
 
+# define DECIMAL "0123456789"
 # define HEX "0123456789abcdef"
 # define HEXU "0123456789ABCDEF"
 # define BINARY "01"
@@ -116,9 +117,11 @@ int		get_next_line(int fd, char **line);
 char	*ft_uitoa(unsigned int n);
 int		ft_ternary(int condition, int a, int b);
 int		ft_abs(int n);
-size_t	ft_ullen(unsigned long nbr, int base);
+size_t	ft_ullen(unsigned long nbr);
+size_t	ft_ullen_base(unsigned long nbr, int base);
 void	ft_putnbr_base(long long nb, char *radix);
 void	ft_putchar(char c);
 void	ft_putstr(char *str);
+char	*ft_ultoa_base(unsigned long n, char *radix);
 
 #endif
