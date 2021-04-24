@@ -6,11 +6,11 @@
 /*   By: msousa <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/23 00:29:17 by msousa            #+#    #+#             */
-/*   Updated: 2021/04/23 00:37:24 by msousa           ###   ########.fr       */
+/*   Updated: 2021/04/24 01:50:25 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_ternary(int condition, int a, int b)
+int	ft_ternary(int condition, int a, int b)
 {
 	if (condition)
 		return (a);
