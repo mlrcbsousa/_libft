@@ -2,7 +2,7 @@
 
 **Version: October 2021**
 
-Libft used for each project **after** the `libft` project.
+Libft used for each project **after** the [`libft`](https://github.com/mlrcbsousa/libft) project.
 
 ## Quick Links
 
