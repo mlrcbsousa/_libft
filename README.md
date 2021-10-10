@@ -11,13 +11,13 @@ Libft used for each project **after** the `libft` project.
 <a href="/ft_memset.c" target="_blank">
 
 - ```c
-  void  *ft_memset(void *str, int c, size_t n);
+  void	*ft_memset(void *str, int c, size_t n);
   ```
 </a>
 <a href="/ft_bzero.c" target="_blank">
 
 - ```c
-  void  ft_bzero(void *s, size_t n);
+  void	ft_bzero(void *s, size_t n);
   ```
 </a>
 <a href="/ft_memcpy.c" target="_blank">
@@ -47,7 +47,7 @@ Libft used for each project **after** the `libft` project.
 <a href="/ft_memcmp.c" target="_blank">
 
 - ```c
-  int ft_memcmp(const void *str1, const void *str2, size_t n);
+  int	ft_memcmp(const void *str1, const void *str2, size_t n);
   ```
 </a>
 <a href="/ft_strlen.c" target="_blank">
@@ -89,67 +89,67 @@ Libft used for each project **after** the `libft` project.
 <a href="/ft_strncmp.c" target="_blank">
 
 - ```c
-  int ft_strncmp(const char *s1, const char *s2, size_t n);
+  int	ft_strncmp(const char *s1, const char *s2, size_t n);
   ```
 </a>
 <a href="/ft_atoi.c" target="_blank">
 
 - ```c
-  int ft_atoi(const char *str);
+  int	ft_atoi(const char *str);
   ```
 </a>
 <a href="/ft_isalpha.c" target="_blank">
 
 - ```c
-  int ft_isalpha(int c);
+  int	ft_isalpha(int c);
   ```
 </a>
 <a href="/ft_isdigit.c" target="_blank">
 
 - ```c
-  int ft_isdigit(int c);
+  int	ft_isdigit(int c);
   ```
 </a>
 <a href="/ft_isalnum.c" target="_blank">
 
 - ```c
-  int ft_isalnum(int c);
+  int	ft_isalnum(int c);
   ```
 </a>
 <a href="/ft_isascii.c" target="_blank">
 
 - ```c
-  int ft_isascii(int c);
+  int	ft_isascii(int c);
   ```
 </a>
 <a href="/ft_isprint.c" target="_blank">
 
 - ```c
-  int ft_isprint(int c);
+  int	ft_isprint(int c);
   ```
 </a>
 <a href="/ft_toupper.c" target="_blank">
 
 - ```c
-  int ft_toupper(int c);
+  int	ft_toupper(int c);
   ```
 </a>
 <a href="/ft_tolower.c" target="_blank">
 
 - ```c
-  int ft_tolower(int c);
+  int	ft_tolower(int c);
   ```
 </a>
 <a href="/ft_calloc.c" target="_blank">
 
 - ```c
-  void  *ft_calloc(size_t nmemb, size_t size);
+  void	*ft_calloc(size_t nmemb, size_t size);
   ```
 </a>
 <a href="/ft_strdup.c" target="_blank">
 
 - ```c
-  char  *ft_strdup(const char *s1);
+  char	*ft_strdup(const char *s1);
   ```
 
 ### Part 2
@@ -157,7 +157,7 @@ Libft used for each project **after** the `libft` project.
 <a href="/ft_substr.c" target="_blank">
 
 - ```c
-  char  *ft_substr(char const *s, unsigned int start, size_t len);
+  char	*ft_substr(char const *s, unsigned int start, size_t len);
   ```
 </a>
 <a href="/ft_strjoin.c" target="_blank">
@@ -193,13 +193,13 @@ Libft used for each project **after** the `libft` project.
 <a href="/ft_putchar_fd.c" target="_blank">
 
 - ```c
-  void  ft_putchar_fd(char c, int fd);
+  void	ft_putchar_fd(char c, int fd);
   ```
 </a>
 <a href="/ft_putstr_fd.c" target="_blank">
 
 - ```c
-  void  ft_putstr_fd(char const *s, int fd);
+  void	ft_putstr_fd(char const *s, int fd);
   ```
 </a>
 <a href="/ft_putendl_fd.c" target="_blank">
@@ -219,55 +219,55 @@ Libft used for each project **after** the `libft` project.
 <a href="/ft_lstnew.c" target="_blank">
 
 - ```c
-  t_list  *ft_lstnew(void *content);
+  t_list	*ft_lstnew(void *content);
   ```
 </a>
 <a href="/ft_lstadd_front.c" target="_blank">
 
 - ```c
-  void  ft_lstadd_front(t_list **lst, t_list *new);
+  void	ft_lstadd_front(t_list **lst, t_list *new);
   ```
 </a>
 <a href="/ft_lstsize.c" target="_blank">
 
 - ```c
-  int ft_lstsize(t_list *lst);
+  int	ft_lstsize(t_list *lst);
   ```
 </a>
 <a href="/ft_lstlast.c" target="_blank">
 
 - ```c
-  t_list  *ft_lstlast(t_list *lst);
+  t_list	*ft_lstlast(t_list *lst);
   ```
 </a>
 <a href="/ft_lstadd_back.c" target="_blank">
 
 - ```c
-  void  ft_lstadd_back(t_list **lst, t_list *new);
+  void	ft_lstadd_back(t_list **lst, t_list *new);
   ```
 </a>
 <a href="/ft_lstdelone.c" target="_blank">
 
 - ```c
-  void  ft_lstdelone(t_list *lst, void (*del)(void *));
+  void	ft_lstdelone(t_list *lst, void (*del)(void *));
   ```
 </a>
 <a href="/ft_lstclear.c" target="_blank">
 
 - ```c
-  void  ft_lstclear(t_list **lst, void (*del)(void	*));
+  void	ft_lstclear(t_list **lst, void (*del)(void	*));
   ```
 </a>
 <a href="/ft_lstiter.c" target="_blank">
 
 - ```c
-  void  ft_lstiter(t_list *lst, void (*f)(void *));
+  void	ft_lstiter(t_list *lst, void (*f)(void *));
   ```
 </a>
 <a href="/ft_lstmap.c" target="_blank">
 
 - ```c
-  t_list  *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+  t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
   ```
 
 ### Added
@@ -275,25 +275,25 @@ Libft used for each project **after** the `libft` project.
 <a href="/ft_strcpy.c" target="_blank">
 
 - ```c
-  char  *ft_strcpy(char *dst, const char *src);
+  char	*ft_strcpy(char *dst, const char *src);
   ```
 </a>
 <a href="/ft_strnchr.c" target="_blank">
 
 - ```c
-  int ft_strnchr(const char *str, int c);
+  int	ft_strnchr(const char *str, int c);
   ```
 </a>
 <a href="/ft_isspace.c" target="_blank">
 
 - ```c
-  int ft_isspace(char c);
+  int	ft_isspace(char c);
   ```
 </a>
 <a href="/ft_uitoa.c" target="_blank">
 
 - ```c
-  char  *ft_uitoa(unsigned int n);
+  char	*ft_uitoa(unsigned int n);
   ```
 </a>
 <a href="/get_next_line.c" target="_blank">
@@ -305,48 +305,49 @@ Libft used for each project **after** the `libft` project.
 <a href="/ft_ternary.c" target="_blank">
 
 - ```c
-  int ft_ternary(int condition, int a, int b);
+  int	ft_ternary(int condition, int a, int b);
   ```
 </a>
 <a href="/ft_abs.c" target="_blank">
 
 - ```c
-  int ft_abs(int n);
+  int	ft_abs(int n);
   ```
 </a>
 <a href="/ft_ullen.c" target="_blank">
 
 - ```c
-  size_t  ft_ullen(unsigned long nbr);
+  size_t	ft_ullen(unsigned long nbr);
   ```
 </a>
 <a href="/ft_ullen_base.c" target="_blank">
 
 - ```c
-  size_t  ft_ullen_base(unsigned long nbr, int base);
+  size_t	ft_ullen_base(unsigned long nbr, int base);
   ```
 </a>
 <a href="/ft_putnbr_base.c" target="_blank">
 
 - ```c
-  void  ft_putnbr_base(long long nb, char *radix);
+  void	ft_putnbr_base(long long nb, char *radix);
   ```
 </a>
 <a href="/ft_putchar.c" target="_blank">
 
 - ```c
-  void  ft_putchar(char c);
+  void	ft_putchar(char c);
   ```
 </a>
 <a href="/ft_putstr.c" target="_blank">
 
 - ```c
-  void  ft_putstr(char *str);
+  void	ft_putstr(char *str);
   ```
 </a>
 <a href="/ft_ultoa_base.c" target="_blank">
 
 - ```c
-  char  *ft_ultoa_base(unsigned long n, char *radix);
+  char	*ft_ultoa_base(unsigned long n, char *radix);
   ```
+</a>
 
