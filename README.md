@@ -8,10 +8,9 @@ Libft used for each project **after** the `libft` project.
 
 ### Part 1
 
--
-
 <a href="/ft_memset.c" target="_blank">
 
+- memset
   ```c
   void  *ft_memset(void *str, int c, size_t n);
   ```
