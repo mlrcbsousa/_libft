@@ -15,6 +15,14 @@ Libft used for each project **after** the `libft` project.
   ```
 
 </a>
+
+<a href="/ft_bzero.c" target="_blank">
+
+- ```c
+  void	ft_bzero(void *s, size_t n);
+  ```
+
+</a>
 - [🔗](/ft_bzero.c)
   ```c
   void	ft_bzero(void *s, size_t n);
