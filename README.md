@@ -8,17 +8,15 @@ Libft used for each project **after** the `libft` project.
 
 ### Part 1
 
-Code | Signature
-| :--- | :---
+-
 
-- [🔗](/ft_memset.c)
 <a href="/ft_memset.c" target="_blank">
 
   ```c
   void  *ft_memset(void *str, int c, size_t n);
   ```
 
-  </a>
+</a>
 - [🔗](/ft_bzero.c)
   ```c
   void	ft_bzero(void *s, size_t n);
