@@ -8,7 +8,7 @@ Libft used for each project **after** the `libft` project.
 
 ### Part 1
 
-- [🔗](/ft_memset.c)
+- [<kbd>⌘F</kbd>](/ft_memset.c)
   ```c
   void  *ft_memset(void *str, int c, size_t n);
   ```
