@@ -1,3 +1,7 @@
+<style>
+  li:before { content: '🔗'; margin-left: -20px; margin-right: 10px; }
+</style>
+
 # Libft
 
 **Version: October 2021**
@@ -9,9 +13,9 @@ Libft used for each project **after** the `libft` project.
 ### Part 1
 
 - [🔗](/ft_memset.c)
-    ```c
-    void  *ft_memset(void *str, int c, size_t n);
-    ```
+  ```c
+  void  *ft_memset(void *str, int c, size_t n);
+  ```
 - [🔗](/ft_bzero.c)
   ```c
   void	ft_bzero(void *s, size_t n);
