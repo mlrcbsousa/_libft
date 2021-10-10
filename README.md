@@ -12,7 +12,7 @@ Code | Signature
 | :--- | :---
 
 - [🔗](/ft_memset.c)
-<a href="/ft_memset.c">
+<a href="/ft_memset.c" target="_blank">
 
   ```c
   void  *ft_memset(void *str, int c, size_t n);
