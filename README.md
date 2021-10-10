@@ -8,7 +8,11 @@ Libft used for each project **after** the `libft` project.
 
 ### Part 1
 
-- [`void  *ft_memset(void *str, int c, size_t n);`](/ft_memset.c)
+- [
+  ```c
+  void  *ft_memset(void *str, int c, size_t n);
+  ```
+  ](/ft_memset.c)
 - [`void	ft_bzero(void *s, size_t n);`](/ft_bzero.c)
 - [`void	*ft_memcpy(void *dest, const void *src, size_t n);`](/ft_memcpy.c)
 - [`void	*ft_memccpy(void *dest, const void *src, int c, size_t n);`](/ft_memccpy.c)
