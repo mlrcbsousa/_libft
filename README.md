@@ -299,7 +299,7 @@ Libft used for each project **after** the [`libft`](https://github.com/mlrcbsous
 <a href="/get_next_line.c" target="_blank">
 
 - ```c
-  int get_next_line(int fd, char **line);
+  int	get_next_line(int fd, char **line);
   ```
 </a>
 <a href="/ft_ternary.c" target="_blank">
