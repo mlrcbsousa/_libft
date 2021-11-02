@@ -353,7 +353,7 @@ Libft used for each project **after** the [`libft`](https://github.com/mlrcbsous
 <a href="/ft_printf.c" target="_blank">
 
 - ```c
-  int   ft_printf(const char *format, ...);
+  int	ft_printf(const char *format, ...);
   ```
 </a>
 
