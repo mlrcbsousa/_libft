@@ -350,4 +350,10 @@ Libft used for each project **after** the [`libft`](https://github.com/mlrcbsous
   char	*ft_ultoa_base(unsigned long n, char *radix);
   ```
 </a>
+<a href="/ft_printf.c" target="_blank">
+
+- ```c
+  int		ft_printf(const char *format, ...);
+  ```
+</a>
 
