@@ -6,7 +6,7 @@
 /*   By: msousa <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 23:15:21 by manuel            #+#    #+#             */
-/*   Updated: 2021/10/09 13:16:44 by msousa           ###   ########.fr       */
+/*   Updated: 2021/11/01 15:12:29 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <ctype.h>
 # include <errno.h>
 # include <limits.h>
+# include "ft_printf.h"
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 1
@@ -46,7 +47,7 @@
 # define BINARY "01"
 # define OCTAL "01234567"
 
-typedef struct s_list
+    typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
