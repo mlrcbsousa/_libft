@@ -374,4 +374,10 @@ Libft used for each project **after** the [`libft`](https://github.com/mlrcbsous
 	double	ft_fabs(double n);
   ```
 </a>
+<a href="/ft_atof.c" target="_blank">
+
+- ```c
+	double	ft_atof(char *str);
+  ```
+</a>
 

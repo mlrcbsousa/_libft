@@ -6,7 +6,7 @@
 /*   By: msousa <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 14:48:13 by msousa            #+#    #+#             */
-/*   Updated: 2021/11/08 15:48:33 by msousa           ###   ########.fr       */
+/*   Updated: 2021/11/08 16:33:11 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,9 +46,10 @@ double	ft_atof(char *str)
 		ft_atof_process(&afterdot, &scale, str, &n);
 		str++;
 	}
-	return (ft_ternary(ft_abs(n) == 0, 1, sign) * n);
+	return (sign * n);
 }
 
+/*
 #include <stdio.h>
 
 int	main(int argc, char *argv[])
@@ -59,3 +60,4 @@ int	main(int argc, char *argv[])
 		printf("Error: requires 1 string arg in the form of a float.\n");
 	return (0);
 }
+*/
