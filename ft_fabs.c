@@ -6,14 +6,13 @@
 /*   By: msousa <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 15:51:20 by msousa            #+#    #+#             */
-/*   Updated: 2021/11/08 16:17:37 by msousa           ###   ########.fr       */
+/*   Updated: 2021/11/08 16:19:55 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-
-double ft_fabs(double n)
+double	ft_fabs(double n)
 {
 	if (n == 0)
 		return (0);
