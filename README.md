@@ -356,4 +356,16 @@ Libft used for each project **after** the [`libft`](https://github.com/mlrcbsous
   int	ft_printf(const char *format, ...);
   ```
 </a>
+<a href="/ft_strcmp.c" target="_blank">
+
+- ```c
+  int	ft_strcmp(const char *s1, const char *s2);
+  ```
+</a>
+<a href="/ft_streq.c" target="_blank">
+
+- ```c
+  t_bool	ft_streq(char const *s1, char const *s2);
+  ```
+</a>
 
