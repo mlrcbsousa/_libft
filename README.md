@@ -380,4 +380,10 @@ Libft used for each project **after** the [`libft`](https://github.com/mlrcbsous
 	double	ft_atof(char *str);
   ```
 </a>
+<a href="/ft_isfloat.c" target="_blank">
+
+- ```c
+	t_bool  ft_isfloat(char *str);
+  ```
+</a>
 
