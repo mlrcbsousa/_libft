@@ -371,19 +371,19 @@ Libft used for each project **after** the [`libft`](https://github.com/mlrcbsous
 <a href="/ft_fabs.c" target="_blank">
 
 - ```c
-	double	ft_fabs(double n);
+  double  ft_fabs(double n);
   ```
 </a>
 <a href="/ft_atof.c" target="_blank">
 
 - ```c
-	double	ft_atof(char *str);
+  double  ft_atof(char *str);
   ```
 </a>
 <a href="/ft_isfloat.c" target="_blank">
 
 - ```c
-	t_bool  ft_isfloat(char *str);
+  t_bool  ft_isfloat(char *str);
   ```
 </a>
 
