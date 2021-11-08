@@ -368,4 +368,10 @@ Libft used for each project **after** the [`libft`](https://github.com/mlrcbsous
   t_bool	ft_streq(char const *s1, char const *s2);
   ```
 </a>
+<a href="/ft_fabs.c" target="_blank">
+
+- ```c
+	double	ft_fabs(double n);
+  ```
+</a>
 

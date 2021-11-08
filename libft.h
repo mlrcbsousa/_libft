@@ -6,7 +6,7 @@
 /*   By: msousa <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 23:15:21 by manuel            #+#    #+#             */
-/*   Updated: 2021/11/08 14:46:09 by msousa           ###   ########.fr       */
+/*   Updated: 2021/11/08 16:17:59 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -125,5 +125,6 @@ char	*ft_ultoa_base(unsigned long n, char *radix);
 int		ft_strcmp(const char *s1, const char *s2);
 t_bool	ft_streq(char const *s1, char const *s2);
 long	ft_pow(int nb, int power);
+double	ft_fabs(double n);
 
 #endif
