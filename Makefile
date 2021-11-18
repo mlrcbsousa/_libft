@@ -6,7 +6,7 @@
 #    By: msousa <mlrcbsousa@gmail.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/12 22:41:56 by msousa            #+#    #+#              #
-#    Updated: 2021/11/18 13:54:41 by msousa           ###   ########.fr        #
+#    Updated: 2021/11/18 14:01:15 by msousa           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,6 @@ AR			= ar rc
 
 NAME		= libft.a
 
-INC			= -Ilibft.h -Ift_printf.h -Ift_boolean.h
 SRCS		= ft_atoi.c ft_isalpha.c ft_isprint.c ft_memchr.c ft_memmove.c \
 					ft_putendl_fd.c ft_strchr.c ft_strlcat.c ft_strncmp.c ft_strtrim.c \
 					ft_bzero.c ft_isascii.c ft_itoa.c ft_memcmp.c ft_memset.c \
@@ -31,7 +30,7 @@ SRCS		= ft_atoi.c ft_isalpha.c ft_isprint.c ft_memchr.c ft_memmove.c \
 					ft_ullen.c ft_putnbr_base.c ft_putchar.c ft_putstr.c \
 					ft_ullen_base.c ft_ultoa_base.c ft_strnchr.c ft_printf_formatters.c \
 					ft_printf.c ft_strcmp.c ft_streq.c ft_pow.c ft_fabs.c ft_atof.c \
-					ft_isnumber.c
+					ft_isfloat.c ft_isnumber.c
 
 OBJS		= ${SRCS:.c=.o}
 
@@ -39,8 +38,8 @@ ${NAME}:	${OBJS}
 					${AR} $@ $^
 					ranlib $@
 
-%.o:%.c
-					${CC} ${CFLAGS} ${INC} -c $< -o $@
+%.o:%.c		libft.h ft_printf.h ft_boolean.h
+					${CC} ${CFLAGS} -c $< -o $@
 
 all:			${NAME}
 
