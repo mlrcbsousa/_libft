@@ -6,7 +6,7 @@
 /*   By: msousa <msousa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 23:15:21 by manuel            #+#    #+#             */
-/*   Updated: 2021/11/19 20:30:07 by msousa           ###   ########.fr       */
+/*   Updated: 2022/01/07 14:19:21 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -140,5 +140,6 @@ t_bool	ft_isnumber(char *str);
 void	ft_putendl(char *str);
 
 // Added for push_swap
+long	ft_atol(const char *str);
 
 #endif
