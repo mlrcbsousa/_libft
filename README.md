@@ -386,4 +386,51 @@ Libft used for each project **after** the [`libft`](https://github.com/mlrcbsous
   t_bool  ft_isfloat(char *str);
   ```
 </a>
+<a href="/ft_isnumber.c" target="_blank">
 
+- ```c
+  t_bool	ft_isnumber(char *str);
+  ```
+</a>
+<a href="/ft_putendl.c" target="_blank">
+
+- ```c
+  void	ft_putendl(char *str);
+  ```
+</a>
+<a href="/ft_atol.c" target="_blank">
+
+- ```c
+  long	ft_atol(const char *str);
+  ```
+</a>
+<a href="/ft_lstfind.c" target="_blank">
+
+- ```c
+  t_list	*ft_lstfind(t_list *list, void *data, int (*cmp)());
+  ```
+</a>
+<a href="/ft_lstat.c" target="_blank">
+
+- ```c
+  t_list	*ft_lstat(t_list *list, unsigned int nbr);
+  ```
+</a>
+<a href="/ft_lstmin_int.c" target="_blank">
+
+- ```c
+  void	*ft_lstmin_int(t_list *list);
+  ```
+</a>
+<a href="/ft_lstmax_int.c" target="_blank">
+
+- ```c
+  void	*ft_lstmax_int(t_list *list);
+  ```
+</a>
+<a href="/ft_islstsorted_int.c" target="_blank">
+
+- ```c
+  t_bool	ft_islstsorted_int(t_list *list);
+  ```
+</a>
