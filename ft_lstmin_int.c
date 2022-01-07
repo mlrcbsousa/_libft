@@ -1,40 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atol.c                                          :+:      :+:    :+:   */
+/*   ft_lstmin_int.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msousa <msousa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/07 14:18:23 by msousa            #+#    #+#             */
-/*   Updated: 2022/01/07 14:36:11 by msousa           ###   ########.fr       */
+/*   Created: 2022/01/07 14:33:44 by msousa            #+#    #+#             */
+/*   Updated: 2022/01/07 14:38:11 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long	ft_atol(const char *str)
+void	*ft_lstmin_int(t_list *list)
 {
-	int			sign;
-	long long	number;
+	void	*min;
 
-	sign = 1;
-	number = 0;
-	while (ft_isspace(*str))
-		str++;
-	if (*str == '-')
-		sign = -1;
-	if (*str == '-' || *str == '+')
-		str++;
-	while (ft_isdigit(*str))
+	if (!list)
+		return (NULL);
+	min = list->content;
+	while (list)
 	{
-		number = number * 10 + *str++ - '0';
-		if (number < 0)
-		{
-			if (sign < 0)
-				return (0);
-			else
-				return (-1);
-		}
+		if (*(int *)list->content < *(int *)min)
+			min = list->content;
+		list = list->next;
 	}
-	return ((long)(number * sign));
+	return (min);
 }
