@@ -6,7 +6,7 @@
 /*   By: msousa <msousa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 23:15:21 by manuel            #+#    #+#             */
-/*   Updated: 2022/01/07 14:24:19 by msousa           ###   ########.fr       */
+/*   Updated: 2022/01/07 14:32:42 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -142,5 +142,6 @@ void	ft_putendl(char *str);
 // Added for push_swap
 long	ft_atol(const char *str);
 t_list	*ft_lstfind(t_list *list, void *data, int (*cmp)());
+t_list	*ft_lstat(t_list *list, unsigned int nbr);
 
 #endif
