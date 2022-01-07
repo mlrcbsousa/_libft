@@ -6,7 +6,7 @@
 /*   By: msousa <msousa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 23:15:21 by manuel            #+#    #+#             */
-/*   Updated: 2022/01/07 14:37:20 by msousa           ###   ########.fr       */
+/*   Updated: 2022/01/07 14:39:56 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -144,5 +144,6 @@ long	ft_atol(const char *str);
 t_list	*ft_lstfind(t_list *list, void *data, int (*cmp)());
 t_list	*ft_lstat(t_list *list, unsigned int nbr);
 void	*ft_lstmin_int(t_list *list);
+void	*ft_lstmax_int(t_list *list);
 
 #endif
