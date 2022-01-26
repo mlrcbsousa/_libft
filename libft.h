@@ -6,7 +6,7 @@
 /*   By: msousa <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 23:15:21 by manuel            #+#    #+#             */
-/*   Updated: 2022/01/26 20:16:54 by msousa           ###   ########.fr       */
+/*   Updated: 2022/01/26 20:37:23 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -147,5 +147,6 @@ void	*ft_lstmin_int(t_list *list);
 void	*ft_lstmax_int(t_list *list);
 t_bool	ft_islstsorted_int(t_list *list);
 void	ft_lstsort(t_list *list, int start, int end);
+t_list	*ft_lstdup(t_list *list);
 
 #endif
