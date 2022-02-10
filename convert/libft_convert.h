@@ -6,7 +6,7 @@
 /*   By: msousa <msousa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 22:04:46 by msousa            #+#    #+#             */
-/*   Updated: 2022/02/10 23:17:30 by msousa           ###   ########.fr       */
+/*   Updated: 2022/02/10 23:22:27 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 
 # include "libft.h"
 
-double ft_atof(char *str);
-int ft_atoi(const char *str);
-long ft_atol(const char *str);
-char *ft_itoa(int n);
-char *ft_uitoa(unsigned int n);
-char *ft_ultoa_base(unsigned long n, char *radix);
+double	ft_atof(char *str);
+int		ft_atoi(const char *str);
+long	ft_atol(const char *str);
+char	*ft_itoa(int n);
+char	*ft_uitoa(unsigned int n);
+char	*ft_ultoa_base(unsigned long n, char *radix);
 
 #endif

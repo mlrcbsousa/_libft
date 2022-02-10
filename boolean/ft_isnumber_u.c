@@ -6,13 +6,13 @@
 /*   By: msousa <msousa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 18:51:30 by msousa            #+#    #+#             */
-/*   Updated: 2022/02/10 18:53:28 by msousa           ###   ########.fr       */
+/*   Updated: 2022/02/10 23:20:26 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_bool ft_isnumber_u(char *str)
+t_bool	ft_isnumber_u(char *str)
 {
 	if (!*str)
 		return (FALSE);
