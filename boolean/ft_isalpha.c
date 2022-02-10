@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ternary.c                                       :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msousa <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
+/*   By: msousa <msousa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/23 00:29:17 by msousa            #+#    #+#             */
-/*   Updated: 2021/11/08 15:54:32 by msousa           ###   ########.fr       */
+/*   Created: 2021/04/12 22:50:05 by msousa            #+#    #+#             */
+/*   Updated: 2022/02/10 21:58:37 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_ternary(int condition, int a, int b)
+#include "libft.h"
+
+t_bool	ft_isalpha(int c)
 {
-	if (condition)
-		return (a);
-	return (b);
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }

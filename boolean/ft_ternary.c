@@ -1,17 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isspace.c                                       :+:      :+:    :+:   */
+/*   ft_ternary.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msousa <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
+/*   By: msousa <msousa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/15 20:29:34 by msousa            #+#    #+#             */
-/*   Updated: 2021/04/15 20:29:41 by msousa           ###   ########.fr       */
+/*   Created: 2021/04/23 00:29:17 by msousa            #+#    #+#             */
+/*   Updated: 2022/02/10 22:01:51 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isspace(char c)
+#include "libft.h"
+
+t_bool	ft_ternary(int condition, int a, int b)
 {
-	return (c == '\f' || c == '\n' || c == '\r' || c == '\t' || c == '\v'
-		|| c == ' ');
+	if (condition)
+		return (a);
+	return (b);
 }

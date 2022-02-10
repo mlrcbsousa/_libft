@@ -6,7 +6,7 @@
 #    By: msousa <msousa@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/12 22:41:56 by msousa            #+#    #+#              #
-#    Updated: 2022/02/10 18:54:31 by msousa           ###   ########.fr        #
+#    Updated: 2022/02/10 22:33:41 by msousa           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,22 +17,91 @@ AR			= ar rc
 
 NAME		= libft.a
 
-SRCS		= ft_atoi.c ft_isalpha.c ft_isprint.c ft_memchr.c ft_memmove.c \
-					ft_putendl_fd.c ft_strchr.c ft_strlcat.c ft_strncmp.c ft_strtrim.c \
-					ft_bzero.c ft_isascii.c ft_itoa.c ft_memcmp.c ft_memset.c \
-					ft_putnbr_fd.c ft_strdup.c ft_strlen.c ft_strnstr.c ft_tolower.c \
-					ft_isalnum.c ft_isdigit.c ft_memccpy.c ft_memcpy.c ft_putchar_fd.c \
-					ft_putstr_fd.c ft_strjoin.c ft_strmapi.c ft_strrchr.c ft_toupper.c \
-					ft_substr.c ft_calloc.c ft_strlcpy.c ft_split.c ft_strcpy.c \
-					ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c \
-					ft_lstiter.c ft_lstlast.c ft_lstmap.c ft_lstnew.c ft_lstsize.c \
-					ft_isspace.c get_next_line.c ft_uitoa.c ft_abs.c ft_ternary.c \
-					ft_ullen.c ft_putnbr_base.c ft_putchar.c ft_putstr.c \
-					ft_ullen_base.c ft_ultoa_base.c ft_strnchr.c ft_printf_formatters.c \
-					ft_printf.c ft_strcmp.c ft_streq.c ft_pow.c ft_fabs.c ft_atof.c \
-					ft_isfloat.c ft_isnumber.c ft_putendl.c ft_atol.c ft_lstfind.c \
-					ft_lstat.c ft_lstmin_int.c ft_lstmax_int.c ft_islstsorted_int.c \
-					ft_lstsort.c ft_lstdup_int.c ft_isnumber_u.c
+INC			= -Iincludes \
+					-Iboolean \
+					-Iconvert \
+					-Ilist \
+					-Imath \
+					-Imemory \
+					-Iprint \
+					-Istring
+
+SRCS		= boolean/ft_isalnum.c \
+					boolean/ft_isalpha.c \
+					boolean/ft_isascii.c \
+					boolean/ft_isdigit.c \
+					boolean/ft_isfloat.c \
+					boolean/ft_isnumber.c \
+					boolean/ft_isnumber_u.c \
+					boolean/ft_isprint.c \
+					boolean/ft_isspace.c \
+					boolean/ft_ternary.c \
+					convert/ft_atof.c \
+					convert/ft_atoi.c \
+					convert/ft_atol.c \
+					convert/ft_itoa.c \
+					convert/ft_uitoa.c \
+					convert/ft_ultoa_base.c \
+					list/ft_islstsorted_int.c \
+					list/ft_lstadd_back.c \
+					list/ft_lstadd_front.c \
+					list/ft_lstat.c \
+					list/ft_lstclear.c \
+					list/ft_lstdelone.c \
+					list/ft_lstdup.c \
+					list/ft_lstdup_int.c \
+					list/ft_lstfind.c \
+					list/ft_lstiter.c \
+					list/ft_lstlast.c \
+					list/ft_lstmap.c \
+					list/ft_lstmax_int.c \
+					list/ft_lstmin_int.c \
+					list/ft_lstnew.c \
+					list/ft_lstsize.c \
+					list/ft_lstsort.c \
+					math/ft_abs.c \
+					math/ft_fabs.c \
+					math/ft_pow.c \
+					math/ft_ullen.c \
+					math/ft_ullen_base.c \
+					memory/ft_bzero.c \
+					memory/ft_calloc.c \
+					memory/ft_memccpy.c \
+					memory/ft_memchr.c \
+					memory/ft_memcmp.c \
+					memory/ft_memcpy.c \
+					memory/ft_memmove.c \
+					memory/ft_memset.c \
+					print/ft_printf.c \
+					print/ft_printf_formatters.c \
+					print/ft_putchar.c \
+					print/ft_putchar_fd.c \
+					print/ft_putendl.c \
+					print/ft_putendl_fd.c \
+					print/ft_putnbr_base.c \
+					print/ft_putnbr_fd.c \
+					print/ft_putstr.c \
+					print/ft_putstr_fd.c \
+					string/ft_split.c \
+					string/ft_strchr.c \
+					string/ft_strcmp.c \
+					string/ft_strcpy.c \
+					string/ft_strdup.c \
+					string/ft_streq.c \
+					string/ft_strjoin.c \
+					string/ft_strlcat.c \
+					string/ft_strlcpy.c \
+					string/ft_strlen.c \
+					string/ft_strmapi.c \
+					string/ft_strnchr.c \
+					string/ft_strncmp.c \
+					string/ft_strnstr.c \
+					string/ft_strrchr.c \
+					string/ft_strtrim.c \
+					string/ft_substr.c \
+					string/ft_tolower.c \
+					string/ft_toupper.c \
+					string/get_next_line.c
 
 OBJS		= ${SRCS:.c=.o}
 
@@ -40,8 +109,8 @@ ${NAME}:	${OBJS}
 					${AR} $@ $^
 					ranlib $@
 
-%.o:%.c		libft.h ft_printf.h ft_boolean.h
-					${CC} ${CFLAGS} -c $< -o $@
+%.o:%.c
+					${CC} ${CFLAGS} ${INC} -c $< -o $@
 
 all:			${NAME}
 

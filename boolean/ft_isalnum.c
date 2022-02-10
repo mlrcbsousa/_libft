@@ -1,16 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msousa <mlrcbsousa@gmail.com>              +#+  +:+       +#+        */
+/*   By: msousa <msousa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/12 22:50:53 by msousa            #+#    #+#             */
-/*   Updated: 2021/04/12 22:50:59 by msousa           ###   ########.fr       */
+/*   Created: 2021/04/12 22:49:38 by msousa            #+#    #+#             */
+/*   Updated: 2022/02/10 21:58:01 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+#include "libft.h"
+
+t_bool	ft_isalnum(int c)
 {
-	return (c >= 32 && c <= 126);
+	return (ft_isalpha(c) || ft_isdigit(c));
 }

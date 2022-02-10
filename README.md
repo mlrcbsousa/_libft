@@ -1,5 +1,7 @@
 # Libft
 
+**BROKEN, NEEDS UDPATE**
+
 **Version: October 2021**
 
 Libft used for each project **after** the [`libft`](https://github.com/mlrcbsousa/libft) project.
