@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isnumber.c                                      :+:      :+:    :+:   */
+/*   ft_isnumber_u.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msousa <msousa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/18 13:48:55 by msousa            #+#    #+#             */
-/*   Updated: 2022/02/10 18:55:57 by msousa           ###   ########.fr       */
+/*   Created: 2022/02/10 18:51:30 by msousa            #+#    #+#             */
+/*   Updated: 2022/02/10 18:53:28 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_bool	ft_isnumber(char *str)
+t_bool ft_isnumber_u(char *str)
 {
-	if (*str == '-')
-		str++;
-	return (ft_isnumber_u(str));
+	if (!*str)
+		return (FALSE);
+	while (*str)
+		if (!ft_isdigit(*str++))
+			return (FALSE);
+	return (TRUE);
 }
 
 /*
@@ -26,7 +29,7 @@ t_bool	ft_isnumber(char *str)
 int	main(int argc, char *argv[])
 {
 	if (argc == 2)
-    printf("%s : %d\n", argv[1], ft_isnumber(argv[1]));
+    printf("%s : %d\n", argv[1], ft_isnumber_u(argv[1]));
 	else
 		printf("Error: requires 1 argument.\n");
 	return (0);

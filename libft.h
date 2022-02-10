@@ -6,7 +6,7 @@
 /*   By: msousa <msousa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/02 23:15:21 by manuel            #+#    #+#             */
-/*   Updated: 2022/02/08 19:04:40 by msousa           ###   ########.fr       */
+/*   Updated: 2022/02/10 18:54:18 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -148,5 +148,8 @@ void	*ft_lstmax_int(t_list *list);
 t_bool	ft_islstsorted_int(t_list *list);
 void	ft_lstsort(t_list *list, int start, int end);
 t_list	*ft_lstdup_int(t_list *list);
+
+// Added for Philosophers
+t_bool ft_isnumber_u(char *str);
 
 #endif
