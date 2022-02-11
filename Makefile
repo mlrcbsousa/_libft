@@ -6,7 +6,7 @@
 #    By: msousa <msousa@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/12 22:41:56 by msousa            #+#    #+#              #
-#    Updated: 2022/02/10 22:33:41 by msousa           ###   ########.fr        #
+#    Updated: 2022/02/11 15:28:56 by msousa           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -109,8 +109,9 @@ ${NAME}:	${OBJS}
 					${AR} $@ $^
 					ranlib $@
 
-%.o:%.c
-					${CC} ${CFLAGS} ${INC} -c $< -o $@
+%.o:%.c		libft.h ft_boolean.h ft_printf.h
+					${CC} ${CFLAGS} -c $< -o $@
+# ${CC} ${CFLAGS} ${INC} -c $< -o $@
 
 all:			${NAME}
 
