@@ -6,7 +6,7 @@
 #    By: msousa <msousa@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/12 22:41:56 by msousa            #+#    #+#              #
-#    Updated: 2022/02/11 15:28:56 by msousa           ###   ########.fr        #
+#    Updated: 2022/02/11 15:46:41 by msousa           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,14 +17,15 @@ AR			= ar rc
 
 NAME		= libft.a
 
-INC			= -Iincludes \
-					-Iboolean \
-					-Iconvert \
-					-Ilist \
-					-Imath \
-					-Imemory \
-					-Iprint \
-					-Istring
+INC			= -Iinclude
+# INC			= -Iincludes \
+# 					-Iboolean \
+# 					-Iconvert \
+# 					-Ilist \
+# 					-Imath \
+# 					-Imemory \
+# 					-Iprint \
+# 					-Istring
 
 SRCS		= boolean/ft_isalnum.c \
 					boolean/ft_isalpha.c \
@@ -109,9 +110,10 @@ ${NAME}:	${OBJS}
 					${AR} $@ $^
 					ranlib $@
 
-%.o:%.c		libft.h ft_boolean.h ft_printf.h
-					${CC} ${CFLAGS} -c $< -o $@
-# ${CC} ${CFLAGS} ${INC} -c $< -o $@
+%.o:%.c
+					${CC} ${CFLAGS} ${INC} -c $< -o $@
+# libft.h ft_boolean.h ft_printf.h
+# ${CC} ${CFLAGS} -c $< -o $@
 
 all:			${NAME}
 
