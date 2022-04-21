@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: msousa <msousa@student.42.fr>              +#+  +:+       +#+         #
+#    By: msousa <mlrcbsousa@gmail.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/12 22:41:56 by msousa            #+#    #+#              #
-#    Updated: 2022/02/11 15:46:41 by msousa           ###   ########.fr        #
+#    Updated: 2022/04/21 10:22:20 by msousa           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,14 +18,6 @@ AR			= ar rc
 NAME		= libft.a
 
 INC			= -Iinclude
-# INC			= -Iincludes \
-# 					-Iboolean \
-# 					-Iconvert \
-# 					-Ilist \
-# 					-Imath \
-# 					-Imemory \
-# 					-Iprint \
-# 					-Istring
 
 SRCS		= boolean/ft_isalnum.c \
 					boolean/ft_isalpha.c \
@@ -112,8 +104,6 @@ ${NAME}:	${OBJS}
 
 %.o:%.c
 					${CC} ${CFLAGS} ${INC} -c $< -o $@
-# libft.h ft_boolean.h ft_printf.h
-# ${CC} ${CFLAGS} -c $< -o $@
 
 all:			${NAME}
 

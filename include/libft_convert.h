@@ -1,20 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ternary.c                                       :+:      :+:    :+:   */
+/*   libft_convert.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msousa <msousa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/23 00:29:17 by msousa            #+#    #+#             */
-/*   Updated: 2022/02/11 18:52:00 by msousa           ###   ########.fr       */
+/*   Created: 2022/02/10 22:04:46 by msousa            #+#    #+#             */
+/*   Updated: 2022/02/10 23:22:27 by msousa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef LIBFT_CONVERT_H
+# define LIBFT_CONVERT_H
 
-int	ft_ternary(t_bool condition, int a, int b)
-{
-	if (condition)
-		return (a);
-	return (b);
-}
+# include "libft.h"
+
+double	ft_atof(char *str);
+int		ft_atoi(const char *str);
+long	ft_atol(const char *str);
+char	*ft_itoa(int n);
+char	*ft_uitoa(unsigned int n);
+char	*ft_ultoa_base(unsigned long n, char *radix);
+
+#endif
