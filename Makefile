@@ -6,7 +6,7 @@
 #    By: msousa <mlrcbsousa@gmail.com>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/04/12 22:41:56 by msousa            #+#    #+#              #
-#    Updated: 2022/04/21 10:36:25 by msousa           ###   ########.fr        #
+#    Updated: 2022/05/07 15:46:38 by msousa           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -95,7 +95,11 @@ SRC			= boolean/ft_isalnum.c \
 					string/ft_substr.c \
 					string/ft_tolower.c \
 					string/ft_toupper.c \
-					string/get_next_line.c
+					string/get_next_line.c \
+					string/ft_strsfree.c \
+					string/ft_strslen.c \
+					file/ft_isfile_ext.c \
+					file/ft_isfile.c
 
 ${NAME}:	${OBJ}
 					${AR} $@ $^
